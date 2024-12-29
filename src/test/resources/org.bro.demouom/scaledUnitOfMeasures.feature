@@ -37,7 +37,7 @@ Feature: Managing Measurement Dimensions
       | name  |  | symbol | Dimension | ConversionRate |
       | Tonne |  | TN     | mass      | 1000000        |
     When  I convert the '20T' to 'Kilogram'
-    Then  the result should be '10000'
+    Then  the result should be '20000'
 
 
 
