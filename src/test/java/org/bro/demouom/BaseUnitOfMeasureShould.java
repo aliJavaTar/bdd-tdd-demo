@@ -11,7 +11,7 @@ public class BaseUnitOfMeasureShould {
     @Test
     void define_in_a_dimension() {
         var miss = createMissDimension();
-        var gram = new BaseUnitOfMeasure("Gram", "gr", miss.id());
+        var gram = new BaseUnitOfMeasure(1, "Gram", "gr", miss.id());
 
 
         assertThat(gram.dimensionId()).isEqualTo(miss.id());
