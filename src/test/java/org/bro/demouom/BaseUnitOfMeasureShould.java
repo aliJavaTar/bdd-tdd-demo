@@ -1,9 +1,9 @@
 package org.bro.demouom;
 
-import org.assertj.core.api.Assertions;
 import org.bro.demouom.domain.BaseUnitOfMeasure;
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.bro.demouom.testUtil.DimensionFactory.createMissDimension;
 
 public class BaseUnitOfMeasureShould {
@@ -14,9 +14,9 @@ public class BaseUnitOfMeasureShould {
         var gram = new BaseUnitOfMeasure("Gram", "gr", miss.id());
 
 
-        Assertions.assertThat(gram.dimensionId()).isEqualTo(miss.id());
-        Assertions.assertThat(gram.name()).isEqualTo("Gram");
-        Assertions.assertThat(gram.symbol()).isEqualTo("gr");
+        assertThat(gram.dimensionId()).isEqualTo(miss.id());
+        assertThat(gram.name()).isEqualTo("Gram");
+        assertThat(gram.symbol()).isEqualTo("gr");
 
     }
 }

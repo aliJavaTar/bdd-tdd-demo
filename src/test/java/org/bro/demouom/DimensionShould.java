@@ -1,7 +1,6 @@
 package org.bro.demouom;
 
 
-import org.bro.demouom.domain.Dimension;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
